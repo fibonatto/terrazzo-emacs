@@ -1,48 +1,4 @@
-;; ;;; terrazzo-theme.el --- Terrazzo theme manager -*- lexical-binding: t; -*-
-
-;; ;;; Code:
-
-;; (defconst terrazzo-theme-directory
-;;   (file-name-directory (or load-file-name buffer-file-name))
-;;   "Directory containing the Terrazzo theme variants.")
-
-;; (defun terrazzo-load (theme)
-;;   "Load Terrazzo THEME."
-;;   (let ((theme-file
-;;          (expand-file-name
-;;           (pcase theme
-;;             ('terrazzo
-;;              "terrazzo-dark.el")
-;;             ('terrazzo-dark
-;;              "terrazzo-dark.el")
-;;             ('terrazzo-light
-;;              "terrazzo-light.el")
-;;             (_
-;;              (user-error "Unknown Terrazzo theme: %s" theme)))
-;;           terrazzo-theme-directory)))
-;;     (mapc #'disable-theme custom-enabled-themes)
-;;     (load theme-file nil nil t)
-;;     (enable-theme theme)
-;;     (setq terrazzo-current-theme theme)))
-
-;; (defun terrazzo-toggle ()
-;;   "Toggle between Terrazzo light and dark themes."
-;;   (interactive)
-;;   (terrazzo-load
-;;    (if (eq terrazzo-current-theme 'terrazzo-light)
-;;        'terrazzo-dark
-;;      'terrazzo-light)))
-
-;; (defvar terrazzo-current-theme nil
-;;   "Currently active Terrazzo theme.")
-
-;; (provide 'terrazzo-theme)
-
-;;; terrazzo-theme.el ends here
-
-
 ;;; terrazzo-theme.el --- Terrazzo theme manager -*- lexical-binding: t; -*-
-
 ;;; Code:
 
 (defconst terrazzo-theme-directory
